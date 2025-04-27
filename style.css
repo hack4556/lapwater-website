@@ -1,0 +1,1547 @@
+/* Colors waaye */
+:root {
+  --primary-color: #00d1f9;
+  --secondary-color: #19409a;
+  --font-black-color: #001442;
+  --font-gray-color: #808080;
+  --bg-color: #f2f9f9;
+  --navbar-height: 70px;
+}
+
+/* Habeenta guud */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  text-transform: capitalize;
+  font-family: "Playfair Display", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+p {
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+  margin: 0px 0px 16px;
+  color: var(--font-gray-color);
+}
+
+img,
+iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Habeenta Spinner-ka */
+#spinner {
+  position: fixed;
+  background: #fff;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s ease, visibility 0.4s;
+}
+
+#spinner.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader {
+  border: 8px solid var(--bg-color);
+  border-top: 8px solid var(--primary-color);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+.spinner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Habeenta Navbar-ka */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 999;
+  background: transparent;
+  transition: background 0.4s, box-shadow 0.4s, border-bottom 0.4s;
+  color: var(--font-black-color);
+  padding: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted var(--font-gray-color);
+}
+
+.navbar.scrolled {
+  background: var(--bg-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-bottom: none;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  max-width: 1200px;
+  margin: auto;
+  height: var(--navbar-height);
+  gap: 3rem;
+}
+
+.nav-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 1rem;
+  white-space: nowrap;
+}
+
+/* Habeenta Tabs-ka */
+.nav-tabs-wrap {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.nav-tabs {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: transparent;
+  border-radius: 6px;
+  min-width: 0;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-tabs li {
+  position: relative;
+}
+
+.nav-tabs li a,
+.nav-tabs .dropdown > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.09rem;
+  padding: 0.7rem 1rem 0.5rem 1rem;
+  transition: color 0.2s, background 0.2s;
+  border-bottom: 1px solid transparent;
+  font-weight: 700;
+  cursor: pointer;
+  display: block;
+  background: transparent;
+}
+
+.navbar.scrolled .nav-tabs li a,
+.navbar.scrolled .nav-tabs .dropdown > a {
+  color: var(--font-black-color);
+}
+
+.nav-tabs li.active > a,
+.nav-tabs li a:hover,
+.nav-tabs .dropdown.open > a {
+  color: var(--primary-color);
+  background: transparent;
+  border-bottom: 2px solid var(--primary-color);
+  font-weight: bold;
+}
+
+/* Habeenta Dropdown menu-ga */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #fff;
+  min-width: 170px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  z-index: 9999;
+  top: 2.5rem;
+  left: -40px;
+  padding: 9px 0;
+  list-style: none;
+}
+
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  color: var(--font-black-color);
+  padding: 10px 22px;
+  text-decoration: none;
+  display: block;
+  font-size: 1rem;
+  border-bottom: 1px solid var(--bg-color);
+  transition: background 0.2s, color 0.2s;
+  background: #fff;
+  border-radius: 0;
+}
+
+.dropdown-menu li:last-child a {
+  border-bottom: none;
+}
+
+/* Habeenta Free delivery */
+.nav-info {
+  font-size: 0.98rem;
+  color: var(--font-gray-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+  min-width: 120px;
+}
+
+.nav-info .phone {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Habeenta Bar-ka + Search-ka + Order-ka */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 4px;
+}
+
+.bar span {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.search-btn {
+  background: var(--primary-color);
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.2s;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.search-btn:hover {
+  background: var(--secondary-color);
+}
+
+.nav-btn.primary {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 1px 4px rgba(20, 185, 213, 0.09);
+  padding: 9px 22px;
+}
+
+.nav-btn.primary:hover {
+  background: var(--secondary-color);
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+/* Habeenta Carousel/Hero */
+.carousel {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 1s ease;
+  top: 0%;
+  left: 0;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.carousel-slide img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 40px 35px 30px 35px;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 95%;
+  background: rgba(30, 34, 46, 0.15);
+}
+
+.carousel-caption h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.carousel-caption h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.carousel-caption p {
+  font-size: 1.12rem;
+  margin-bottom: 1.3rem;
+  color: #fff;
+}
+
+.carousel-btns {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 15px;
+}
+
+.carousel-btn {
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  outline: none;
+}
+
+.carousel-btn.primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.carousel-btn.primary:hover {
+  background: var(--secondary-color);
+}
+
+.carousel-btn.secondary {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.carousel-btn.secondary:hover {
+  background: var(--primary-color);
+}
+
+/* Habeenta Carousel arrows */
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #fff;
+  background: var(--primary-color);
+  cursor: pointer;
+  z-index: 2;
+  border: none;
+  transition: background 0.2s;
+}
+
+.carousel-control:hover {
+  background: var(--secondary-color);
+}
+
+.carousel-control.prev {
+  left: 0;
+  padding-right: 20px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.carousel-control.prev i {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+.carousel-control.next {
+  right: 1.3rem;
+  padding-left: 20px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.carousel-control.next i {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+/* Habeenta Hero animation-ka */
+.hero-animate-right {
+  opacity: 0;
+  transform: translateX(120px) translateY(-50%);
+  animation: slideInRight 1s ease-in-out 0.2s forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(120px) translateY(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(-50%);
+  }
+}
+
+.hero-animate-left {
+  opacity: 0;
+  transform: translateX(-120px) translateY(-50%);
+  animation: slideInLeft 1s ease-in-out 0.2s forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-120px) translateY(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(-50%);
+  }
+}
+
+.overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 20, 66, 0.8);
+  z-index: 1;
+}
+
+.overlay > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Qoraalka kore */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  opacity: 0.9;
+  color: #fff;
+}
+
+.txt-primary {
+  color: var(--primary-color);
+}
+
+.hero-section {
+  height: 60vh;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+/* Habeenta container-ka guud */
+.container {
+  width: min(90%, 1120px);
+  padding-block: 5rem;
+  margin-inline: auto;
+}
+
+/* Habeenta BG-ga */
+.bg-color {
+  background-color: var(--bg-color);
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+  padding-block: 2rem;
+}
+
+.bg-white {
+  background-color: #fff;
+  border-radius: 0.625rem;
+  padding: 2rem;
+}
+
+/* Habeenta grid-ka 1 cols-ka */
+.grid-1-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.grid-2-cols,
+.grid-3-cols,
+.grid-4-cols {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Habeenta Flex-ka */
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-inline: 1rem;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+/* Habeenta Features-ka */
+.header {
+  text-align: center;
+  margin: 0px 0px 8px;
+}
+
+.header h4 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.header h1 {
+  font-size: 4.7rem;
+  color: var(--font-black-color);
+  margin: 0px 0px 16px;
+  padding-bottom: 1rem;
+}
+
+.icon {
+  width: 6.25rem;
+  height: 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3.125rem;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 3rem;
+}
+
+.icon.blue {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 1rem;
+}
+
+.sub-header {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--font-black-color);
+  margin: 0px 0px 16px;
+}
+
+a.sub-header:hover,
+a.read-more:hover {
+  color: var(--primary-color);
+}
+
+.read-more {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  padding: 6px 12px;
+}
+
+/* Habeenta About Us */
+.about-img img {
+  margin-left: 1rem;
+}
+
+.about-img {
+  position: relative;
+  border-top: 5px solid var(--secondary-color);
+  border-left: 10px solid var(--secondary-color);
+  border-radius: 8px;
+}
+
+.about-exp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-weight: bold;
+  padding: 25px;
+  border-radius: 0 0 10px 0;
+  font-size: 1.8rem;
+}
+
+/* Text */
+.header.left {
+  text-align: left;
+}
+
+.header.left h1 {
+  font-size: 4rem;
+  margin: 0px 0px -40px;
+}
+
+.btn {
+  font-weight: bold;
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 16px 40px;
+  border: none;
+  outline: none;
+  border-radius: 6.25rem;
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+}
+
+/* Habeenta Fact Counter-ka */
+.bg-image {
+  background: linear-gradient(rgba(25, 64, 154, 0.9), rgba(25, 64, 154, 0.9)),
+    url("../img/fact-bg.jpg") center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 4rem);
+  margin-top: -2rem;
+}
+
+.flex.col h4,
+.txt-white {
+  color: #fff;
+}
+
+.sub-header.txt-white {
+  font-size: 2rem;
+}
+
+.sub-header.txt-white span {
+  font-size: 3.5rem;
+  font-weight: 100;
+  vertical-align: middle;
+}
+
+/* Habeenta Services-ka */
+.size h1 {
+  font-size: 5.5rem;
+}
+
+.shadow {
+  box-shadow: 0px 0px 0.3125rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.625rem;
+}
+
+.flex.row.shadow:hover {
+  background-color: var(--primary-color);
+}
+
+.flex.row.shadow:hover a {
+  color: black;
+}
+
+.flex.row.shadow:hover p {
+  color: #fff;
+}
+
+.flex.row.shadow:hover .icon {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  border-radius: 50%;
+}
+
+/* Habeenta Products */
+.flex.col.border {
+  border: 0.5px solid var(--font-gray-color);
+  border-radius: 10px;
+}
+
+.bg-color.wid-109 {
+  width: 109.5%;
+}
+
+.bg-color.wid-109 .bg-font {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.bg-font {
+  color: var(--primary-color);
+}
+
+.btn.pro {
+  display: inline-block;
+  width: 50%;
+}
+
+/* Habeenta Blogs-ka */
+.flex.col.shadow {
+  transition: transform 0.3s ease-in-out;
+}
+
+.flex.col.shadow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.blog-img-container {
+  position: relative;
+  width: 110%;
+  height: 50vh;
+  max-height: 250px;
+}
+
+/* Habeenta Calendar icon-ka */
+.icon.blog {
+  width: 50%;
+  height: 3rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  gap: 0.5rem;
+  z-index: 1;
+}
+
+.bg-color.wid-110 {
+  margin-top: -1.5rem;
+  width: 110%;
+}
+
+.add-gap {
+  gap: 2rem;
+}
+
+/* Habeenta Teams-ka */
+.border.pad-10 {
+  padding: 10%;
+}
+
+.bg-color.wid-100 {
+  margin-top: -1.5rem;
+  width: 100%;
+}
+
+.bg-color .sub-header.txt-black {
+  color: var(--font-black-color);
+}
+
+.relative {
+  position: relative;
+}
+
+.share-icon-wrapper {
+  position: absolute;
+  bottom: 0.625rem;
+  left: 0.625rem;
+}
+
+.team-icon {
+  position: absolute;
+  top: 50%;
+  left: -2.25rem;
+  display: flex;
+  gap: 5px;
+  padding: 0.625rem;
+  background-color: rgba(0, 136, 204, 0.95);
+  transform: translateY(-50%);
+  border-top-right-radius: 3.125rem;
+  border-bottom-right-radius: 3.125rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.share-icon-wrapper:hover .team-icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-icon a {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.icon.blue.hover:hover {
+  background-color: var(--primary-color);
+}
+
+/* Habeenta Contact Us-ka */
+.size {
+  font-size: 1rem;
+}
+
+.bg-white.input {
+  padding: 0.5rem;
+}
+
+.bg-white.input input,
+.bg-white.input textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.bg-white.input textarea {
+  padding-bottom: 10rem;
+}
+
+.btn.full-width {
+  width: 100%;
+  border: none;
+}
+
+.bg-white.pad-half {
+  padding: 0.5rem;
+}
+
+#map {
+  height: 68%;
+}
+
+/* Habeenta Page Not Fonud */
+.icon.not-found {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  font-size: 5rem;
+}
+
+.font-not-found p {
+  font-size: 1.5rem;
+}
+
+/* === RESPONSIVE === */
+.grid-1-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.grid-2-cols,
+.grid-3-cols,
+.grid-4-cols {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Habeenta Contacts-ka */
+.bg-white.input {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.btn.full-width {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+#address,
+#mail,
+#tel {
+  width: 100%;
+}
+
+/* Habeenta Testimonial */
+.testimonial-carousel {
+  position: relative;
+  width: 100%;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: opacity 0.7s;
+  opacity: 1;
+  gap: 2rem;
+}
+
+.testimonial-slide {
+  flex: 1 1 0;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 24px 22px 32px 22px;
+  margin: 0 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+}
+
+.testimonial-img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 4px solid var(--primary-color);
+  object-fit: cover;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  box-shadow: 0 4px 16px var(--secondary-color);
+}
+
+.testimonial-slide h4 {
+  margin: 8px 0 0 0;
+  color: var(--font-black-color);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.testimonial-slide p {
+  margin: 8px 0 0 0;
+  font-size: 0.98rem;
+  text-align: center;
+}
+
+.testimonial-stars {
+  margin: 12px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+.testimonial-stars i {
+  color: var(--primary-color);
+  font-size: 1.12rem;
+}
+
+.testimonial-controls {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  right: 30px;
+  top: -48px;
+  z-index: 3;
+}
+
+.testimonial-btn {
+  background: var(--primary-color);
+  border: none;
+  color: #fff;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px var(--secondary-color);
+}
+
+.testimonial-btn:active,
+.testimonial-btn:focus {
+  background: var(--primary-color);
+  outline: none;
+}
+
+.testimonial-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 8px;
+}
+
+.testimonial-indicator {
+  width: 13px;
+  height: 13px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid var(--secondary-color);
+  transition: background 0.22s;
+}
+.testimonial-indicator.active {
+  background: var(--primary-color);
+}
+
+/* Habeenta Footer-ka */
+.footer {
+  background: var(--font-black-color);
+  color: #fff;
+  padding: 60px 0 30px 0;
+}
+
+.footer-col {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.footer-col i {
+  margin-right: 10px;
+  font-size: 1.4em;
+}
+
+.footer-col h3 span {
+  vertical-align: middle;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 18px;
+}
+
+.footer-col.free-6 ul li::before {
+  content: "\f105";
+  font-family: "Font Awesome 6 Free";
+}
+
+.footer-col ul li::before {
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+.footer-col ul li a {
+  color: var(--font-gray-color);
+  text-decoration: none;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.footer-col ul li a:hover {
+  color: var(--primary-color);
+}
+
+.footer-signup {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  background: #fff;
+  border-radius: 2rem;
+  padding: 3px 4px 3px 18px;
+  max-width: 100%;
+}
+
+.footer-signup input {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 2rem;
+  padding: 8px 6px;
+  min-width: 0;
+  flex: 1;
+  font-size: 1rem;
+}
+
+.copyright {
+  background: var(--font-black-color);
+  color: var(--font-gray-color);
+  font-size: 1rem;
+  text-align: center;
+  padding: 17px 0 10px 0;
+  letter-spacing: 0.01em;
+  border-top: 0.5px dotted var(--font-gray-color);
+}
+
+.copyright-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.copyright i {
+  margin-right: 6px;
+  color: var(--primary-color);
+}
+
+.copyright a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.09);
+  cursor: pointer;
+  display: none;
+  z-index: 99;
+  font-size: 18px;
+  transition: background 0.2s;
+}
+.back-to-top:hover {
+  background: var(--secondary-color);
+}
+
+/* ==== Habeenta Responive-ka Portrait Phones-ka yar yar  ==== */
+@media only screen and (max-width: 480px) {
+  .nav-tabs-wrap,
+  .nav-btn.primary,
+  .search-btn,
+  .nav-info {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+    margin-right: 20%;
+  }
+
+  .nav-tabs-wrap.show {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    background: var(--bg-color);
+    width: 100vw;
+    z-index: 1000;
+  }
+
+  .nav-tabs {
+    flex-direction: column;
+    width: 100vw;
+    padding: 10px 0 20px 0;
+  }
+
+  .nav-tabs li {
+    text-align: center;
+  }
+
+  .nav-tabs li a,
+  .nav-tabs .dropdown > a {
+    color: var(--font-black-color);
+  }
+
+  .bar {
+    margin-left: 30%;
+  }
+
+  .nav-logo {
+    font-size: 3rem;
+    margin-left: 10%;
+  }
+
+  .carousel-control.next {
+    right: 0.1rem;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption {
+    padding: 19px 7px 12px 7px;
+  }
+
+  .grid-2-cols,
+  .grid-3-cols,
+  .grid-4-cols {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1.5rem;
+  }
+
+  /* Fact Counter */
+  .bg-image {
+    height: calc(100% - 4%);
+    margin-block: 2%;
+    padding-block: 2%;
+  }
+
+  /* Habeenta Products */
+  .bg-color.wid-109 {
+    width: 105.5%;
+  }
+
+  /* Habeenta Contacts-ka */
+  #contact {
+    padding-bottom: 50%;
+  }
+
+  .bg-white.input {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .btn.full-width {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+  #contact-2 {
+    width: 100%;
+    height: 150%;
+  }
+}
+
+/* ==== Habeenta Responive-ka Phones-ka iyo Tablets-ka yar yar ==== */
+@media only screen and (max-width: 768px) {
+  .nav-tabs-wrap,
+  .nav-info {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+    margin-right: 10%;
+  }
+
+  .nav-tabs-wrap.show {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    background: var(--bg-color);
+    width: 100vw;
+    z-index: 1000;
+  }
+
+  .nav-tabs {
+    flex-direction: column;
+    width: 100vw;
+    padding: 10px 0 20px 0;
+  }
+
+  .nav-tabs li {
+    text-align: center;
+  }
+
+  .nav-tabs li a,
+  .nav-tabs .dropdown > a {
+    color: var(--font-black-color);
+  }
+
+  .nav-logo {
+    font-size: 2rem;
+    margin-left: 5%;
+    margin-right: -5%;
+  }
+
+  .bar {
+    margin-left: -10%;
+  }
+
+  .nav-btn.primary {
+    font-size: 0.7rem;
+  }
+
+  .carousel-control.next {
+    right: 0.1rem;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption {
+    padding: 19px 7px 12px 7px;
+  }
+
+  .grid-2-cols,
+  .grid-3-cols,
+  .grid-4-cols {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1.5rem;
+  }
+
+  /* Fact Counter */
+  .bg-image {
+    height: calc(100% - 4%);
+    margin-block: 2%;
+    padding-block: 2%;
+  }
+
+  /* Habeenta Products */
+  .bg-color.wid-109 {
+    width: 105.5%;
+  }
+
+  /* Habeenta Contacts */
+  #contact {
+    padding-bottom: 50%;
+  }
+
+  #contact-2 {
+    width: 100%;
+    height: 150%;
+  }
+
+  .testimonial-track {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .testimonial-slide {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .testimonial-controls {
+    right: 18px;
+    top: -43px;
+  }
+}
+
+/* ==== Habeenta Responive-ka Tablets iyo Laptops-ka yar yar  ==== */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .nav-tabs-wrap,
+  .nav-btn.primary {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+    margin-right: 5%;
+  }
+
+  .nav-tabs-wrap.show {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    background: var(--bg-color);
+    width: 100vw;
+    z-index: 1000;
+  }
+
+  .nav-tabs {
+    flex-direction: column;
+    width: 100vw;
+    padding: 10px 0 20px 0;
+  }
+
+  .nav-tabs li {
+    text-align: center;
+  }
+
+  .nav-tabs li a,
+  .nav-tabs .dropdown > a {
+    color: var(--font-black-color);
+  }
+
+  .bar {
+    margin-left: 30%;
+  }
+
+  .nav-logo {
+    font-size: 3rem;
+    margin-left: 10%;
+  }
+
+  .carousel-control.next {
+    right: 0.1rem;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption {
+    padding: 19px 7px 12px 7px;
+  }
+
+  .grid-2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3-cols,
+  .grid-4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Dhexda Geey Hadii hal grid soo hara */
+  .grid-3-cols > *:nth-last-child(1):nth-child(odd),
+  .grid-4-cols > *:nth-last-child(1):nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 60%;
+  }
+
+  /* Habeenta Products */
+  .bg-color.wid-109 {
+    width: 105.5%;
+  }
+
+  .testimonial-track {
+    gap: 1rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .copyright-content {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+  }
+  .footer-col {
+    min-width: 0;
+  }
+}
+
+/* ==== Habeenta Responive-ka Desktop-ka ==== */
+@media only screen and (min-width: 1025px) {
+  .carousel-control.next {
+    right: 0.8rem;
+  }
+
+  .grid-2-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-4-cols {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ==== Habeenta Responive-ka Shaashadaha waa wayn ==== */
+@media only screen and (min-width: 1441px) {
+  .grid-3-cols {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+
+  .grid-4-cols {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+  }
+}

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="author" content="Engineer Honest" />
+    <meta name="description" content="Acuas - Drinking Water Website" />
+    <title>lapwater - Contact Us</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon Icon -->
+    <link rel="icon" href="assets/img/icon.png" type="image/x-icon" />
+
+    <!-- Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="navbar" class="navbar">
+      <div class="nav-container">
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo">
+          <i class="fas fa-hand-holding-water"></i> lapwater
+        </a>
+        <!-- Tabs -->
+        <nav class="nav-tabs-wrap">
+          <ul class="nav-tabs" id="navTabs">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle"
+                >Pages <i class="fa fa-angle-down"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="feature.html">Our Feature</a></li>
+                <li><a href="fact-counter.html">Fact Counter</a></li>
+                <li><a href="product.html">Our Product</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="testimonial.html">Testimonial</a></li>
+                <li><a href="404.html">404 Page</a></li>
+              </ul>
+            </li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Get Free Delivery -->
+        <div class="nav-info">
+          <span>Get Free Delivery</span>
+          <span class="phone">Free: +91 9161100075</span>
+        </div>
+
+        <!-- Bar + Search + Order -->
+        <div class="nav-actions">
+          <div class="bar">
+            <span>|</span>
+          </div>
+          <button class="search-btn" aria-label="Search">
+            <i class="fa fa-search"></i>
+          </button>
+          <button class="nav-btn primary">Order Now</button>
+        </div>
+        <!-- Mobile Toggle -->
+        <div class="nav-toggle" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="overlay hero-section">
+      <img src="assets/img/breadcrumb.jpg" alt="Image 1" />
+
+      <div class="hero-content">
+        <h1>Contact Us</h1>
+        <p>
+          Home <span>/</span> <span>Page</span> <span>/</span>
+          <span class="txt-primary">Contact</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Start -->
+    <section id="contact" class="bg-color">
+      <div class="container">
+        <!-- Grid part 1 -->
+        <div class="grid-2-cols add-gap">
+          <div>
+            <div class="header">
+              <h4>Let’s Connect</h4>
+              <h1>Send Your Message</h1>
+              <p class="size">
+                The contact form is currently inactive. Get a functional and
+                working contact form with Ajax & PHP in a few minutes. Just copy
+                and paste the files, add a little code and you're done.
+                <a class="read-more" href="https://htmlcodex.com/contact-form"
+                  >Download Now</a
+                >.
+              </p>
+            </div>
+
+            <!-- Form -->
+            <div class="form">
+              <div class="grid-2-cols">
+                <!-- Name -->
+                <div class="bg-white input">
+                  <input type="text" id="name" placeholder="Your Name" />
+                </div>
+
+                <!-- Email -->
+                <div class="bg-white input">
+                  <input
+                    type="email"
+                    class="form-control border-0"
+                    id="email"
+                    placeholder="Your Email"
+                  />
+                </div>
+
+                <!-- Phone -->
+                <div class="bg-white input">
+                  <input
+                    type="phone"
+                    class="form-control border-0"
+                    id="phone"
+                    placeholder="Your Phone"
+                  />
+                </div>
+
+                <!-- Subject -->
+                <div class="bg-white input">
+                  <input
+                    type="text"
+                    class="form-control border-0"
+                    id="subject"
+                    placeholder="Subject"
+                  />
+                </div>
+              </div>
+
+              <br />
+              <div class="bg-white input">
+                <textarea placeholder="Leave a message here"></textarea>
+              </div>
+              <br />
+              <div>
+                <button class="btn full-width">Send Message</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid part 2 -->
+          <div id="contact-2">
+            <!-- Address -->
+            <div id="address" class="flex row bg-white pad-half">
+              <div class="icon blue"><i class="fas fa-envelope fa-2x"></i></div>
+              <div>
+                <h4 class="sub-header">Address</h4>
+                <p>CP-53, 2nd Floor, JSV Hyundai Building, 
+                  near engineering college chauraha, Sector A, Jankipuram, 
+                  Lucknow, Uttar Pradesh 
+                  India, 226021</p>
+              </div>
+            </div>
+            <br />
+            <div class="grid-2-cols">
+              <!-- Mail Us -->
+              <div id="mail" class="flex row bg-white pad-half">
+                <div class="icon blue">
+                  <i class="fas fa-map-marker-alt fa-2x"></i>
+                </div>
+                <div>
+                  <h4 class="sub-header">Mail Us</h4>
+                  <p>chitranshdixit811@gmail.com</p>
+                </div>
+              </div>
+
+              <!-- Telephone -->
+              <div id="tel" class="flex row bg-white pad-half">
+                <div class="icon blue">
+                  <i class="fa fa-phone-alt fa-2x"></i>
+                </div>
+                <div>
+                  <h4 class="sub-header">Telephone</h4>
+                  <p>+91 9161100075</p>
+                </div>
+              </div>
+            </div>
+            <br />
+            <!-- Map -->
+            <div id="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1726.0916888126637!2d45.312701463234255!3d2.0330982130102955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sso!4v1741973520583!5m2!1sen!2sso"
+                style="border: 0"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="grid-2-cols">
+          <!-- Grid Part 2  -->
+          <div>
+            <form class="footer-signup">
+              <input type="text" placeholder="Email address to Subscribe" />
+              <button type="submit" class="btn">Subscribe</button>
+            </form>
+          </div>
+
+          <!-- Grid Part 2  -->
+          <div class="footer-socials flex row">
+            <a
+              class="icon blue hover"
+              href="https://www.facebook.com/injineermaxameddaacad"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with Eng. Honest on Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              class="icon blue hover"
+              href="https://www.x.com/injineerdaacad"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with Eng. Honest on Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="icon blue hover"
+              href="https://www.instagram.com/injineer.daacad"
+              rel="noopener noreferrer"
+              aria-label="Chat with Eng. Honest on Instagram"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              class="icon blue hover"
+              href="https://www.linkedin.com/in/injineerdaacad"
+              rel="noopener noreferrer"
+              aria-label="Chat with Eng. Honest on linkedin"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+
+        <br />
+        <div class="grid-4-cols add-gap">
+          <div class="footer-col">
+            <div>
+              <h3>
+                <i class="fas fa-hand-holding-water txt-primary"></i>
+                <span class="sub-header txt-white">lapwater</span>
+              </h3>
+            </div>
+
+            <div>
+              <p>
+                We understand you always want safe water for a healthy life.<br />
+                That's why we're dedicated to delivering meticulously purified water,<br />
+                bottled with care, right to your doorstep. Experience the peace of mind that comes,<br />
+                with knowing your family is drinking water that meets the highest quality standards,<br />
+                supporting a healthier and happier life, every single day.
+              </p>
+              <form class="footer-signup">
+                <input type="text" placeholder="Enter your email" />
+                <button type="submit" class="btn">SignUp</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="footer-col free-6">
+            <h4 class="sub-header txt-white">About Us</h4>
+            <ul>
+              <li><a href="#">Why Choose Us</a></li>
+              <li><a href="#">Free Water Bottles</a></li>
+              <li><a href="#">Water Dispensers</a></li>
+              <li><a href="#">Bottled Water Coolers</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="sub-header txt-white">Business Hours</h4>
+            <p>
+              <span>Mon - Friday:</span><br /><b class="txt-white"
+                >09.00 am to 07.00 pm</b
+              >
+            </p>
+            <p>
+              <span>Saturday:</span><br /><b class="txt-white"
+                >10.00 am to 05.00 pm</b
+              >
+            </p>
+            <p>
+              <span>Vacation:</span><br /><b class="txt-white"
+                >All Sunday is our vacation</b
+              >
+            </p>
+          </div>
+          <div class="footer-col">
+            <div><h4 class="sub-header txt-white">Contact Info</h4></div>
+            <div>
+              <ul>
+                <li>
+                  <a>
+                    <i class="fa fa-map-marker-alt"></i> CP-53, 2nd Floor,  
+                    JSV Hyundai Building, near engineering college chauraha, Sector A, Jankipuram, 
+                    Lucknow, Uttar Pradesh 
+                    India, 226021
+                </li>
+                <li>
+                  <a><i class="fas fa-envelope"></i> chitranshdixit811@gmail.com</a>
+                </li>
+                <li>
+                  <a><i class="fas fa-envelope"></i> chitranshdixit811@gmail.com</a>
+                </li>e.com</a>
+                </li>
+                <li>
+                  <a><i class="fas fa-phone"></i> +91 9161100075</a>
+                </li>
+                <li>
+                  <a><i class="fas fa-print"></i> +91 9161100075</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <div class="copyright-content">
+        <span>
+          <i class="fa fa-copyright"></i>
+        </span>
+        <span>
+          Designed By Chitransh Dixit
+         
+        </span>
+      </div>
+    </div>
+    <button
+      type="button"
+      class="back-to-top"
+      onclick="scrollToTop()"
+      aria-label="Back to top of page"
+    >
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

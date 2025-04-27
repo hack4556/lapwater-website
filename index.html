@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="author" content="Engineer Honest" />
+    <meta name="description" content="lapwater - Drinking Water Website" />
+    <title>lapwater - Home Page</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="navbar" class="navbar">
+      <div class="nav-container">
+        <!-- Logo -->
+        <a href="index.html" class="nav-logo">
+          <i class="fas fa-hand-holding-water"></i> lapwater
+        </a>
+        <!-- Tabs -->
+        <nav class="nav-tabs-wrap">
+          <ul class="nav-tabs" id="navTabs">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle"
+                >Pages <i class="fa fa-angle-down"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="feature.html">Our Feature</a></li>
+                <li><a href="fact-counter.html">Fact Counter</a></li>
+                <li><a href="product.html">Our Product</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="testimonial.html">Testimonial</a></li>
+                <li><a href="404.html">404 Page</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Get Free Delivery -->
+        <div class="nav-info">
+          <span>Get Free Delivery</span>
+          <span class="phone">Free: +91 9119820501</span>
+        </div>
+
+        <!-- Bar + Search + Order -->
+        <div class="nav-actions">
+          <div class="bar">
+            <span>|</span>
+          </div>
+          <button class="search-btn" aria-label="Search">
+            <i class="fa fa-search"></i>
+          </button>
+          <button class="nav-btn primary">Order Now</button>
+        </div>
+        <!-- Mobile Toggle -->
+        <div class="nav-toggle" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero (Carousel) -->
+    <section class="carousel" id="carousel">
+      <div class="carousel-slide active" data-direction="right">
+        <img src="assets/img/carousel-1.jpg" alt="Image 1" />
+        <div class="carousel-caption hero-animate-right">
+          <h4>IMPORTANCE LIFE</h4>
+          <h1>Always Want Safe Water<br />For Healthy Life</h1>
+          <p>
+            Experience the peace of mind that comes,
+            with knowing your family is drinking water that meets the highest quality standards,
+             supporting a healthier and happier life, every single day.
+         </p>
+          <div class="carousel-btns">
+            <button class="carousel-btn primary">Order Now</button>
+            <button class="carousel-btn secondary">Free Estimate</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-slide" data-direction="left">
+        <img src="assets/img/carousel-2.jpg" alt="Image 2" />
+        <div class="carousel-caption hero-animate-left">
+          <h4>IMPORTANCE LIFE</h4>
+          <h1>Always Want Safe Water<br />For Healthy Life</h1>
+          <p>
+            We understand you always want safe water for a healthy life. 
+            That's why we're dedicated to delivering meticulously purified water, 
+            bottled with care, right to your doorstep.
+          <div class="carousel-btns">
+            <button class="carousel-btn primary">Order Now</button>
+            <button class="carousel-btn secondary">Free Estimate</button>
+          </div>
+        </div>
+      </div>
+      <!-- Arrows -->
+      <div class="carousel-control prev" id="prevSlide">
+        <i class="fa fa-angle-left"></i>
+      </div>
+      <div class="carousel-control next" id="nextSlide">
+        <i class="fa fa-angle-right"></i>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="bg-color">
+      <div class="container">
+        <div class="header">
+          <h4>Our Feature</h4>
+          <h1>A Trusted Name In Bottled Water Industry</h1>
+        </div>
+
+        <!-- Grid 4 Columns -->
+        <div class="grid-4-cols">
+          <!-- Feature 1 -->
+          <div class="flex col bg-white">
+            <div class="icon">
+              <i class="fas fa-hand-holding-water fa-3x"></i>
+            </div>
+            <a href="#" class="sub-header">Quality Check</a>
+            <p>
+              Our rigorous checks ensure every bottle meets the highest standards,  
+              of purity and safety for our local community.
+            <a href="#" class="read-more"
+              >Read More <i class="fa fa-angle-right"></i
+            ></a>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="flex col bg-white">
+            <div class="icon">
+              <i class="fas fa-filter fa-3x"></i>
+            </div>
+            <a href="#" class="sub-header">5 Steps Filtration</a>
+            <p>
+              We remove impurities at every stage, ensuring superior taste and safety.
+              Experience quality from the inside out.
+            </p>
+            <a href="#" class="read-more"
+              >Read More <i class="fa fa-angle-right"></i
+            ></a>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="flex col bg-white">
+            <div class="icon">
+              <i class="fas fa-recycle fa-3x"></i>
+            </div>
+            <a href="#" class="sub-header">Composition</a>
+            <p>
+              We maintain the natural balance of our water.
+              rNothing added, just the goodness of quality water.
+            </p>
+            <a href="#" class="read-more"
+              >Read More <i class="fa fa-angle-right"></i
+            ></a>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="flex col bg-white">
+            <div class="icon">
+              <i class="fas fa-microscope fa-3x"></i>
+            </div>
+            <a href="#" class="sub-header">Lab Control</a>
+            <p>
+              ur dedicated lab team meticulously analyzes and controls the quality of your drinking water.
+              our health and trust are our top priorities.
+            </p>
+            <a href="#" class="read-more"
+              >Read More <i class="fa fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <div id="about" class="container">
+      <div class="grid-2-cols">
+        <!-- About Image -->
+        <div class="about-img">
+          <img src="assets/img/about.jpg" alt="About Image" />
+          <div class="about-exp"><span>20 Years Experiance</span></div>
+        </div>
+
+        <!-- About Text -->
+        <div class="flex col add-gap">
+          <div class="header left">
+            <h4>About Us</h4>
+            <h1>We Deliver The Quality Water.</h1>
+          </div>
+
+          <div>
+            <p>
+              Fuel your body with the essential hydration it deserves.
+              Our premium bottled water supports your well-being,. 
+              keeping you refreshed and revitalized throughout the day
+              Choose health, choose our quality water.
+            </p>
+          </div>
+
+          <!-- Grid 1 -->
+          <div class="grid-1-col">
+            <!-- Item 1 -->
+            <div class="bg-color">
+              <div class="flex row">
+                <div class="icon move">
+                  <i class="fas fa-tint fa-2x"></i>
+                </div>
+
+                <div class="flex col">
+                  <div>
+                    <a href="#" class="sub-header">Satisfied Customer</a>
+                  </div>
+                  <div>
+                    <p>
+                      Pure refreshment, delivered with ease. Hydrate with quality.
+                      The finest water, bottled for your life.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="bg-color">
+              <div class="flex row">
+                <div class="icon">
+                  <i class="fas fa-faucet fa-2x"></i>
+                </div>
+                <div class="flex col">
+                  <div><a href="#" class="sub-header">Standard Product</a></div>
+                  <div>
+                    <p>
+                      Experience the crisp, clean taste of our quality water. 
+                      Stay energized, focused, and healthy with every sip.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Read More Button -->
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fact Counter -->
+    <div class="bg-image bg-white">
+      <div class="container">
+        <div class="grid-4-cols">
+          <!-- Fact Counter 1 -->
+          <div class="flex col">
+            <div class="icon">
+              <i class="fas fa-thumbs-up fa-3x"></i>
+            </div>
+            <h4 class="sub-header">Happy Clients</h4>
+            <div class="sub-header txt-white">
+              300+
+              <span>+</span>
+            </div>
+          </div>
+
+          <!-- Fact Counter 2 -->
+          <div class="flex col">
+            <div class="icon">
+              <i class="fas fa-truck fa-3x"></i>
+            </div>
+            <h4 class="sub-header">Transport</h4>
+            <div class="sub-header txt-white">
+              28
+              <span class="txt-white">+</span>
+            </div>
+          </div>
+
+          <!-- Fact Counter 3 -->
+          <div class="flex col">
+            <div class="icon">
+              <i class="fas fa-users fa-3x"></i>
+            </div>
+            <h4 class="sub-header">Employees</h4>
+            <div class="sub-header txt-white">
+              40+
+              <span class="txt-white">+</span>
+            </div>
+          </div>
+
+          <!-- Fact Counter 4 -->
+          <div class="flex col">
+            <div class="icon">
+              <i class="fas fa-heart fa-3x"></i>
+            </div>
+            <h4 class="sub-header">Years Experiance</h4>
+            <div class="sub-header txt-white">
+              17
+              <span class="txt-white">+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Start -->
+    <section class="bg-color">
+      <div class="container">
+        <div class="header size">
+          <h4>Our Service</h4>
+          <h1>Protect Your Family with Best Water</h1>
+        </div>
+
+        <!-- Grid 3 Columns -->
+        <div class="grid-3-cols add-gap">
+          <div class="grid-1-col add-gap">
+            <!-- Service 1 -->
+            <div class="flex row shadow">
+              <div class="flex col">
+                <div>
+                  <a href="#" class="sub-header">Residential Waters</a>
+                </div>
+                <div>
+                  <p>
+                    Get premium quality water delivered right to your doorstep.
+                    Stay refreshed, effortlessly.
+                  </p>
+                </div>
+              </div>
+              <div class="icon">
+                <i class="fas fa-hand-holding-water fa-2x"></i>
+              </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="flex row shadow">
+              <div class="flex col">
+                <div>
+                  <a href="#" class="sub-header">Commercial Waters</a>
+                </div>
+                <div>
+                  <p>
+                    From offices to restaurants, we've got your hydration covered.
+                    We deliver the refreshment your business needs to thrive.
+                  </p>
+                </div>
+              </div>
+              <div class="icon">
+                <i class="fas fa-dumpster-fire fa-2x"></i>
+              </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="flex row shadow">
+              <div class="flex col">
+                <div>
+                  <a href="#" class="sub-header">Filtration Plants</a>
+                </div>
+                <div>
+                  <p>
+                    Our filtration solutions provide consistent quality for your peace of mind.
+                    Keep everyone refreshed and focused.
+                  </p>
+                </div>
+              </div>
+
+              <div class="icon">
+                <i class="fas fa-filter fa-2x"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- image -->
+          <div class="service-img">
+            <img src="assets/img/water.png" alt="Water Image" />
+          </div>
+
+          <!--  -->
+          <div class="grid-1-col add-gap">
+            <!-- Service Part 2.1 -->
+            <div class="flex row shadow">
+              <div class="icon">
+                <i class="fas fa-assistive-listening-systems fa-2x"></i>
+              </div>
+
+              <div class="flex col">
+                <div>
+                  <a href="#" class="sub-header">Water Softening</a>
+                </div>
+
+                <div>
+                  <p>
+                    Our filtration plants deliver quality you can trust.
+                    our multiple bottle options.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Part 2.2 -->
+            <div class="flex row shadow">
+              <div class="icon">
+                <i class="fas fa-recycle fa-2x"></i>
+              </div>
+
+              <div class="flex col">
+                <div><a href="#" class="sub-header">Market Research</a></div>
+                <div>
+                  <p>
+                    Understand local demand, preferences, and trends.
+                    Know what resonates with consumers in Uttar Pradesh & India.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Part 2.3 -->
+            <div class="flex row shadow">
+              <div class="icon">
+                <i class="fas fa-project-diagram fa-2x"></i>
+              </div>
+
+              <div class="flex col">
+                <div>
+                  <a href="#" class="sub-header">Project Planning</a>
+                </div>
+                <div>
+                  <p class="mb-0">
+                    Quality and safety are our top priorities, from sourcing to delivery.
+                    We oversee every step with precision.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Start -->
+    <section class="products">
+      <div class="container">
+        <div class="header size">
+          <h4>Our Products</h4>
+          <h1>We Deliver Best Quality Bottle Packs.</h1>
+        </div>
+
+        <!-- Grid 3 Columns -->
+        <div class="grid-3-cols add-gap">
+          <!-- Product 3 -->
+          <div class="flex col border">
+            <div>
+              <img src="assets/img/product-3.png" alt="Image" />
+            </div>
+            <div class="bg-color wid-109">
+              <p>2L 1 Bottle</p>
+              <a href="#" class="sub-header">Mineral Water Bottle</a>
+              <p class="bg-font">$35:00</p>
+              <div></div>
+              <a href="#" class="btn pro">Read More</a>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="flex col border">
+            <div>
+              <img
+                src="assets/img/product-2.png"
+                class="img-fluid w-100 rounded-top"
+                alt="Image"
+              />
+            </div>
+            <div class="bg-color wid-109">
+              <p>4L 2 Bottles</p>
+              <a href="#" class="sub-header">RO Water Bottle</a>
+              <p class="bg-font">$70:00</p>
+              <a href="#" class="btn pro">Read More</a>
+            </div>
+          </div>
+
+          <!-- Product 1 -->
+          <div class="flex col border">
+            <div>
+              <img
+                src="assets/img/product-1.png"
+                class="img-fluid w-100 rounded-top"
+                alt="Image"
+              />
+            </div>
+            <div class="bg-color wid-109">
+              <p>6L 3 Bottles</p>
+              <a href="#" class="sub-header">UV Water Bottle</a>
+              <p class="bg-font">$100:00</p>
+              <a href="#" class="btn pro">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Start -->
+    <section id="blog">
+      <div class="container">
+        <div class="header">
+          <h4>Our Blog</h4>
+          <h1>Latest Blog & News</h1>
+        </div>
+
+        <!-- Grid 3 Columns -->
+        <div class="grid-3-cols add-gap">
+          <!-- Blog 1 -->
+          <div class="flex col shadow">
+            <div class="blog-img-container">
+              <img src="assets/img/blog-1.jpg" alt="Blog 1" />
+              <div class="icon blog">
+                <i class="fa fa-calendar-alt me-1"></i> Jan 12 2025
+              </div>
+            </div>
+            <div class="flex col bg-color wid-110">
+              <div>
+                <a href="#" class="sub-header"
+                  > Experience hassle-free hydration.
+                  lapwater</a
+                >
+              </div>
+
+              <div>
+                <p>
+                  We strive for excellence in every aspect.
+                  officiis
+                </p>
+              </div>
+
+              <div>
+                <a href="#" class="read-more"
+                  >Read More <i class="fa fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog 2 -->
+          <div class="flex col shadow">
+            <div class="blog-img-container">
+              <img src="assets/img/blog-2.jpg" alt="Blog 2" />
+              <div class="icon blog">
+                <i class="fa fa-calendar-alt me-1"></i> Jan 12 2025
+              </div>
+            </div>
+
+            <div class="flex col bg-color wid-110">
+              <div>
+                <a href="#" class="sub-header"
+                  >Experience hassle-free hydration.
+                  lapwater</a
+                >
+              </div>
+              <div>
+                <p>
+                  We strive for excellence in every aspect
+                  officiis
+                </p>
+              </div>
+              <div>
+                <a href="#" class="read-more"
+                  >Read More <i class="fa fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog 2 -->
+          <div class="flex col shadow">
+            <div class="blog-img-container">
+              <img src="assets/img/blog-3.jpg" alt="Blog 3" />
+              <div class="icon blog">
+                <i class="fa fa-calendar-alt me-1"></i> Jan 12 2025
+              </div>
+            </div>
+            <div class="flex col bg-color wid-110">
+              <div>
+                <a href="#" class="sub-header"
+                  >Experience hassle-free hydration.
+                  lapwater</a
+                >
+              </div>
+              <div>
+                <p>
+                  We strive for excellence in every aspect.
+                  officiis
+                </p>
+              </div>
+
+              <div>
+                <a href="#" class="read-more"
+                  >Read More <i class="fa fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Team -->
+    <section id="teams">
+      <div class="container">
+        <div class="header size">
+          <h4 class="text-uppercase text-primary">Our Team</h4>
+          <h1 class="display-3 text-capitalize mb-3">
+            What is Really seo & How Can I Use It?
+          </h1>
+        </div>
+
+        <!-- Grid 4 Columns -->
+        <div class="grid-4-cols add-gap">
+          <!-- Team 1 -->
+          <div class="flex col shadow border pad-10">
+            <div class="relative">
+              <img src="assets/img/team-1.jpg" alt="Image" />
+              <!-- Share Icon - always visible -->
+              <div class="share-icon-wrapper">
+                <a class="icon blue" href="#">
+                  <i class="fas fa-share-alt"></i>
+                </a>
+                <!-- Team icons - appear when hovering the share icon -->
+                <div class="team-icon">
+                  <a class="icon blue hover" href="#"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="icon blue hover" href="#"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="icon blue hover" href="#"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a class="icon blue hover" href="#"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-color wid-100">
+              <h4 class="sub-header txt-black">Hard Branots</h4>
+              <p>CEO & Founder</p>
+            </div>
+          </div>
+
+          <!-- Team 2 -->
+          <div class="flex col shadow border pad-10">
+            <div class="relative">
+              <img src="assets/img/team-2.jpg" alt="Image" />
+              <!-- Share Icon - always visible -->
+              <div class="share-icon-wrapper">
+                <a class="icon blue" href="#">
+                  <i class="fas fa-share-alt"></i>
+                </a>
+                <!-- Team icons - appear when hovering the share icon -->
+                <div class="team-icon">
+                  <a class="icon blue hover" href="#"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="icon blue hover" href="#"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="icon blue hover" href="#"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a class="icon blue hover" href="#"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-color wid-100">
+              <h4 class="sub-header txt-black">Hard Branots</h4>
+              <p>CEO & Founder</p>
+            </div>
+          </div>
+
+          <!-- Team 3 -->
+          <div class="flex col shadow border pad-10">
+            <div class="relative">
+              <img src="assets/img/team-3.jpg" alt="Image" />
+              <!-- Share Icon - always visible -->
+              <div class="share-icon-wrapper">
+                <a class="icon blue" href="#">
+                  <i class="fas fa-share-alt"></i>
+                </a>
+                <!-- Team icons - appear when hovering the share icon -->
+                <div class="team-icon">
+                  <a class="icon blue hover" href="#"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="icon blue hover" href="#"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="icon blue hover" href="#"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a class="icon blue hover" href="#"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-color wid-100">
+              <h4 class="sub-header txt-black">Hard Branots</h4>
+              <p>CEO & Founder</p>
+            </div>
+          </div>
+
+          <!-- Team 4 -->
+          <div class="flex col shadow border pad-10">
+            <div class="relative">
+              <img src="assets/img/team-4.jpg" alt="Image" />
+              <!-- Share Icon - always visible -->
+              <div class="share-icon-wrapper">
+                <a class="icon blue" href="#">
+                  <i class="fas fa-share-alt"></i>
+                </a>
+                <!-- Team icons - appear when hovering the share icon -->
+                <div class="team-icon">
+                  <a class="icon blue hover" href="#"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="icon blue hover" href="#"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="icon blue hover" href="#"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a class="icon blue hover" href="#"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-color wid-100">
+              <h4 class="sub-header txt-black">Hard Branots</h4>
+              <p>CEO & Founder</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="bg-color">
+      <div class="container">
+        <div class="header size">
+          <h4>Testimonials</h4>
+          <h1>Our Clients Reviews</h1>
+        </div>
+
+        <div class="testimonial-carousel">
+          <div class="testimonial-controls">
+            <button
+              class="testimonial-btn"
+              id="prevTestimonial"
+              aria-label="Previous"
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button
+              class="testimonial-btn"
+              id="nextTestimonial"
+              aria-label="Next"
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <!-- Slides group -->
+          <div class="testimonial-track" id="testimonialTrack">
+            <!-- Slides are injected by JS -->
+          </div>
+          <div class="testimonial-indicators" id="testimonialIndicators"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="grid-2-cols">
+          <!-- Grid Part 2  -->
+          <div>
+            <form class="footer-signup">
+              <input type="text" placeholder="Email address to Subscribe" />
+              <button type="submit" class="btn">Subscribe</button>
+            </form>
+          </div>
+
+          <!-- Grid Part 2  -->
+          <div class="footer-socials flex row">
+            <a
+              class="icon blue hover"
+              href="https://www.facebook.com/injineermaxameddaacad"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with Eng. Honest on Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              class="icon blue hover"
+              href="https://www.x.com/injineerdaacad"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with Eng. Honest on Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="icon blue hover"
+              href="https://www.instagram.com/injineer.daacad"
+              rel="noopener noreferrer"
+              aria-label="Chat with Eng. Honest on Instagram"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              class="icon blue hover"
+              href="https://www.linkedin.com/in/injineerdaacad"
+              rel="noopener noreferrer"
+              aria-label="Chat with Eng. Honest on linkedin"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+
+        <br />
+        <div class="grid-4-cols add-gap">
+          <div class="footer-col">
+            <div>
+              <h3>
+                <i class="fas fa-hand-holding-water txt-primary"></i>
+                <span class="sub-header txt-white">lapwater</span>
+              </h3>
+            </div>
+
+            <div>
+              <p>
+                we bring a promise of purity and well-being to your doorstep. <br />
+                Each bottle reflects our dedication to quality<br />
+                ensuring a refreshing taste of health with every sip.  <br />
+                cExperience the ease and reliability of having premium water, t<br />
+                crafted with care, just for you.
+              </p>
+              <form class="footer-signup">
+                <input type="text" placeholder="Enter your email" />
+                <button type="submit" class="btn">SignUp</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="footer-col free-6">
+            <h4 class="sub-header txt-white">About Us</h4>
+            <ul>
+              <li><a href="#">Why Choose Us</a></li>
+              <li><a href="#">Free Water Bottles</a></li>
+              <li><a href="#">Water Dispensers</a></li>
+              <li><a href="#">Bottled Water Coolers</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="sub-header txt-white">Business Hours</h4>
+            <p>
+              <span>Mon - Friday:</span><br /><b class="txt-white"
+                >09.00 am to 07.00 pm</b
+              >
+            </p>
+            <p>
+              <span>Saturday:</span><br /><b class="txt-white"
+                >10.00 am to 05.00 pm</b
+              >
+            </p>
+            <p>
+              <span>Vacation:</span><br /><b class="txt-white"
+                >All Sunday is our vacation</b
+              >
+            </p>
+          </div>
+          <div class="footer-col">
+            <div><h4 class="sub-header txt-white">Contact Info</h4></div>
+            <div>
+              <ul>
+                <li>
+                  <a>
+                    <i class="fa fa-map-marker-alt"></i> CP-53, 2nd Floor, JSV Hyundai Building, 
+                    near engineering college chauraha, 
+                    Sector A, Jankipuram,
+                     Lucknow, Uttar Pradesh
+                     India, 226021
+                  </a>
+                </li>
+                <li>
+                  <a><i class="fas fa-envelope"></i> chitranshdixit811@gmail.com</a>
+                </li>
+                <li>
+                  <a><i class="fas fa-envelope"></i> chitranshdixit811@gmail.com</a>
+                </li></a>
+                </li>
+                <li>
+                  <a><i class="fas fa-phone"></i> +919161100075</a>
+                </li>
+                <li>
+                  <a><i class="fas fa-print"></i> +919161100075</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <div class="copyright-content">
+        <span>
+          <i class="fa fa-copyright"></i>
+        </span>
+        <span>
+          Designed By Chitransh Dixit
+        </span>
+      </div>
+    </div>
+    <button
+      type="button"
+      class="back-to-top"
+      onclick="scrollToTop()"
+      aria-label="Back to top of page"
+    >
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
