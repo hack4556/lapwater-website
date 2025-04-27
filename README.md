@@ -1,14 +1,6 @@
 # lapwater - Water Drinking Website 🌊💧
 
-This is a collaborative web project hosted on GitHub titled **Acuas**, focused on promoting clean water and healthy drinking habits. The website is being developed as part of a collaboration effort.
-
-## 👤 Contributor
-
-**Eng. Honest**
-
-**Eng. Yuwazac**
-
-**📅 Date:** Wednesday, April 22, 2025
+This is a collaborative web project hosted on GitHub titled **lapwater **, focused on promoting clean water and healthy drinking habits. The website is being developed as part of a collaboration effort.
 
 ## 📁 Project Structure
 
@@ -50,12 +42,6 @@ Pages have been added:
 - FontAwesome (for icons)
 - Goole Fonts
 - JavaScript (ES6+)
-- Git & GitHub (for version control and collaboration)
+- Git & GitHub 
 
-**Previous link**: https://acuas.vercel.app/
-
-## 🤝 Collaboration Note
-
-This project is part of a collaborative effort on GitHub. Please feel free to clone, fork, and contribute by submitting pull requests.
-
-> Developed with 💙 by Eng. Honest and Eng. Yuwazac
+> Developed 💙 by Chitransh Dixit
